@@ -15,7 +15,7 @@ services:
 
   django_app:
     image: kirankumargowda/django-notes:latest
-    container_name: "django_cont"
+    container_name: "django_count"
     ports:
       - "8000:8000"
     command: sh -c "python manage.py migrate --noinput && gunicorn notesapp.wsgi --bind 0.0.0.0:8000"
