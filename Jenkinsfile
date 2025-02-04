@@ -41,9 +41,7 @@ pipeline {
  
         stage ('Deploy') {
             steps {
-                echo "Deploying the container"
-                echo " Deploying wait my brother :) "
-                echo "Wait :( "
+                echo "Deploying the container and wait for it to deploy brother :) "
                 sh "docker run -d -p 8000:8000 django-notes:latest"
             }
         }
