@@ -4,6 +4,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo "Pipeline is running!"
+                echo "pipeline"
             }
         }
     }
